@@ -7,6 +7,18 @@ nav {
     justify-content: center;
 }
 
+#view-hover:hover {
+    background-color: gainsboro;
+}
+
+.dropdown {
+}
+
+#top-10 {
+    display: flex;
+    justify-content: center;
+}
+
 #page-title {
     text-align: center;
     margin-top: 20;

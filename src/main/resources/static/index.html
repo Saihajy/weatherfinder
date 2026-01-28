@@ -10,12 +10,12 @@
             <h1 id="page-title">Weather Finder</h1>
         </header>
         <nav>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="btn-group">
+                <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Cities
                 </button>
                 <ul class="dropdown-menu">
-                    <li><button class="dropdown-item" type="button">Mississauga</button></li>
+                    <li style="width: 300px;">Mississauga<button id="view-hover">View Weather</button></li>
                     <li><button class="dropdown-item" type="button">Hamilton</button></li>
                     <li><button class="dropdown-item" type="button">Quebec City</button></li>
                     <li><button class="dropdown-item" type="button">Laval</button></li>
@@ -33,7 +33,7 @@
                     <li><button class="dropdown-item" type="button">Whitehorse</button></li>
                     <li><button class="dropdown-item" type="button">Yellowknife</button></li>
                 </ul>
-                </div>
+            </div>
             <div class="spinner-border" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div>

@@ -7,16 +7,15 @@ nav {
     justify-content: center;
 }
 
-#view-hover:hover {
-    background-color: gainsboro;
-}
-
-.dropdown {
+.spinner-border {
+    display: none;
 }
 
 #top-10 {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    padding-top: 35px;
+
 }
 
 #page-title {
@@ -24,4 +23,70 @@ nav {
     margin-top: 20;
     font-size: 50px;
     font-weight: bold;
+    border: 3px  solid black;
+    background-color: lightgray;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block
+}
+
+.dropbtn {
+    width: 300px;
+    background-color: lightgray;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    display: none;
+    position:absolute;
+    top: 100%;
+    left: 0;
+
+    min-width: 300px;
+    background: rgba(255, 255, 255,0.93);
+    border: 1px solid #ddd;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.12);
+
+    z-index: 9999;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*  Creating space between remember*/
+    gap: 12px;
+
+    padding: 10px 12px;
+}
+
+.menu-item:hover {
+    background-color: lightgray;
+}
+
+.city-name {
+    white-space: nowrap;
+}
+
+.view-btn {
+    padding: 6px 10px;
+    border: 1px solid rgb(51, 51, 51);
+    background: rgba(255, 255, 255,0.5); 
+    cursor: pointer;
+}
+
+.view-btn:hover {
+    background: rgb(220, 220, 220);
+}
+
+#top-10-title {
+    font-size: 17px;
+    text-decoration: underline;
 }

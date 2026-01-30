@@ -10,7 +10,17 @@ var cities = {
     Coquitlam: { lat: 49.2842, lon: -122.7932 },
     Victoria: { lat: 48.4283, lon: -123.3649 },
     Oakville: { lat: 43.4474, lon: -79.6666 },
-    Yellowknife: { lat: 62.4540, lon: -114.3773 }
+    Yellowknife: { lat: 62.4540, lon: -114.3773 },
+    Vancouver: {lat: 49.2586, lon: -123.1207},
+    Toronto: {lat: 43.6532, lon: -79.3832},
+    Montreal: {lat: 45.5031, lon: -73.5698},
+    Calgary: {lat: 51.0456, lon: -114.0575},
+    Ottawa: {lat: 45.4208, lon: -75.6901},
+    Edmonton: {lat: 53.5436, lon: -113.4912},
+    Winnipeg: {lat: 49.8955, lon: -97.1384},
+    Brampton: {lat: 43.6858, lon: -79.7599},
+    Surrey: {lat: 49.1913, lon: -122.8491},
+    Chilliwack: {lat: 49.1709, lon: -121.9525},
 };
 async function getWeather(lat, lon) {
     var url ="https://api.open-meteo.com/v1/forecast?latitude=" + lat + "&longitude=" + lon + 
@@ -31,7 +41,7 @@ function renderWeather(cityName, current) {
 }
 
 function attachListners() {
-    var buttons = document.querySelectorAll(".dropdown-content .view-btn")
+    var buttons = document.querySelectorAll("#top-10 .view-btn,.dropdown-content .view-btn")
 
     buttons.forEach(function (btn) {
         btn.addEventListener("click", async function () {

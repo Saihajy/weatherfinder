@@ -10,12 +10,9 @@ nav {
 .spinner-border {
     display: none;
 }
-
-#top-10 {
-    display: flex;
-    justify-content: left;
-    padding-top: 35px;
-
+#top-10, #weather-info{
+    background-color: lightgray;
+    border: 3px solid black;
 }
 
 #page-title {
@@ -89,4 +86,14 @@ nav {
 #top-10-title {
     font-size: 17px;
     text-decoration: underline;
+}
+
+.weather-content {
+    margin: 30px auto;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 30px;
 }
